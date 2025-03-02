@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.leaflet-container {
+    width: 100%;
+    height: 90vh; 
+    min-height: 300px; 
+    max-height: 90vh;
+  }
+
+  .loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .legend-container {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 1000; /* Keeps it on top */
+  }
+  
+  .legend {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .legend h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .legend-icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .legend-label {
+    font-size: 14px;
+  }
+  
+  .legend-toggle {
+    background: #0f8500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .legend-toggle:hover {
+    background: #0056b3;
+  }
+  
