@@ -43,7 +43,7 @@
     position: absolute;
     top: 10px;
     left: 50px;
-    z-index: 1000; /* Keeps it on top */
+    z-index: 1000; 
   }
   
   .legend {
