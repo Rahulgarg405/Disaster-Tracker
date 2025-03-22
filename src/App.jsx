@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import Disaster_Data from "./components/Disaster_Data";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./index.css";
 
 const API_URL = "https://eonet.gsfc.nasa.gov/api/v3/events";
@@ -33,10 +34,29 @@ function App() {
   }
   return (
     <div>
-      <h1>
-        🌍 Live Disaster Tracker: Real-Time Global Events from the Last 15 Days
-        🚨
-      </h1>
+      <div className="flex justify-between">
+        <h1 className="text-3xl font-mono ">
+          🌍 Live Disaster Tracker: Real-Time Global Events from the Last 15
+          Days 🚨
+        </h1>
+        <div className="top-1 right-2 flex">
+          <a
+            href="https://github.com/Rahulgarg405"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-gray-800 text-3xl hover:text-gray-600 transition m-5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rahul-garg-210778257"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="text-blue-600 text-3xl hover:text-blue-400 transition" />
+          </a>
+        </div>
+      </div>
+
       <div style={{ width: "100%", height: "70vh", position: "relative" }}>
         <Disaster_Data events={events} />
       </div>

@@ -75,7 +75,13 @@ const Disaster_Data = ({ events }) => {
   }, [events, loading]);
 
   return (
-    <div style={{ width: "100%", height: "70vh", position: "relative" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "70vh",
+        position: "relative",
+      }}
+    >
       <LoadingBar
         color="#007bff"
         progress={progress}

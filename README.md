@@ -1,12 +1,18 @@
-# React + Vite
+# Alert-Map : Disaster Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Disaster Tracker is a real-time global monitoring tool that visualizes natural disasters using NASA's API.
+This interactive map helps users track wildfires, storms, earthquakes, and other environmental hazards worldwide.
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![alt text](<Screenshot 2025-03-02 160312.png>)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Live Disaster Data – Fetches real-time disaster reports from NASA API.
+- Interactive Map – Uses React Leaflet for smooth and dynamic mapping.
+- User-Friendly UI – Clean and responsive interface for easy navigation.
+
+## Tech Stack
+
+React, TailwindCSS, NASA API, React-Leaflet
